@@ -2,4 +2,14 @@
 
 import { authClient } from "@/lib/auth-client";
 
-export 
+export default function SignoutButton() {
+    return (
+        <button 
+        className="bg-neutral-700 text-white p-4 rounded-md"
+        onClick={() => authClient.signOut()}
+        >
+            Signout
+        </button>
+    );
+
+}
